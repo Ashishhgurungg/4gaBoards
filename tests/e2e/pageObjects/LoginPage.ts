@@ -4,6 +4,8 @@ import {DataTable} from '@cucumber/cucumber';
 
 export class LoginPage{
 
+  //readonly in typescript does the job of const because const is not used for properties of a class
+
   public readonly baseUrl: string;
   public readonly page: Page;
   public readonly emailField: Locator;

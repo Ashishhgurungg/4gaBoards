@@ -30,7 +30,7 @@ export class CustomWorld extends World {
   constructor(options: IWorldOptions) {
     super(options);
   }
-
+  //if hooks initialize the page objects here then we don't have to initialize them in every step definition file
   initPages(): void {
     this.loginPage = new LoginPage(this.page);
   }
@@ -44,4 +44,5 @@ export class CustomWorld extends World {
   }
 }
 
+//This tells the world constructor to use our customWorld
 setWorldConstructor(CustomWorld);
